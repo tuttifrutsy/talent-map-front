@@ -1,0 +1,177 @@
+.App {
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+h2{
+  padding: 3%;
+  line-height: 1em;
+}
+.logos {
+  height: 20vmin;
+  pointer-events: none;
+  margin: 0%;
+  padding: 0%;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20vmin;
+  pointer-events: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.App-header {
+  background: transparent linear-gradient(1deg, #001355 0%, #000411 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  padding-inline-start: 3%;
+  padding-inline-end: 3%;
+  
+}
+ li {
+  display: inline;
+  
+}
+
+ a{
+   color:#3daf29;
+   text-decoration: none;
+   font-size: 1.8em;
+}
+
+.AppAuth {
+  text-align: center;
+  color: white;
+  font-size: calc(8px + 2vmin);
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.switch{
+  display: flex;
+  flex-flow: row  wrap;
+  align-items: flex-start;
+  margin: 10% 10%;
+}
+
+
+
+.MuiFormControl-root .MuiFormLabel-root{
+  color: white;
+  font-size: .7em;
+}
+
+.MuiFormControl-root .MuiFormLabel-root.Mui-focused  {
+  color: white;
+}
+.icon {
+  color: #23CA0F;
+  font-size: 1em;
+}
+
+.MuiFormControl-root .MuiInput-underline{
+  border-bottom-color: #23CA0F;
+}
+ .MuiFormControl-root .MuiInput-underline::after{
+  border-bottom-color: #23CA0F;
+}
+
+ .MuiFormControl-root .MuiInputBase-root{
+    color: white;
+    font-size: 1em;
+ }
+
+ .login{
+   width: 100%;
+   height: 500vh;
+ }
+
+ .logoPrincipal{
+   width: 15%;
+ }
+
+   .makeStyles-root-1  .MuiAppBar-colorPrimary{
+   background-color: #000415;
+ }
+
+ .social-btn{
+   display: flex;
+   justify-content: space-between;
+   width: 40%;
+   margin: auto;
+    color: #23CA0F;
+   font-size: 1.5em;
+ }
+
+
+ .icons i{ 
+  padding: 15%;
+  margin: auto;
+ }
+
+.small{
+   font-size: .3em;
+   padding: 1%;
+ }
+
+ .container{ 
+   text-align: center;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+ }
+
+ .mapi{
+   width: 70%;
+   margin: auto;
+
+ }
+
+.map{
+  width: 100%;
+}
+
+.container .makeStyles-margin-65 {
+  margin: auto;
+}
+
+.home{
+  text-align: center;
+}
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link{
+  font-size: .8em;
+  color: #23CA0F;
+  padding: 1%;
+}
