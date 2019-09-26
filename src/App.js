@@ -6,16 +6,18 @@ import Home from './views/Home';
 import AuthHome from "./views/AuthHome";
 import Mapi from "./views/Mapi";
 import Navbar from "./components/Navbar";
+import ViewDetail from './views/ViewDetail';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/login" component={AuthHome} />
-        <Route path="/mapi"  component={Mapi} />
-       </Switch>
+        <Route path="/mapi" component={Mapi} />
+        <Route path="/detail" component={ViewDetail} />
+      </Switch>
     </div>
   );
 }
