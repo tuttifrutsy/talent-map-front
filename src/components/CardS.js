@@ -57,7 +57,7 @@ export default function CardS() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      
 
       <CardHeader 
         avatar={
@@ -116,7 +116,7 @@ export default function CardS() {
           </Typography>
         </CardContent>
       </Collapse>
-          </CardActionArea>
+         
     </Card>
   );
 }

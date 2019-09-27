@@ -6,8 +6,8 @@ import Container from "@material-ui/core/Container";
 import Chips from '../components/Chip';
 import IconBtn from '../components/Iconbtn';
 import CardS from '../components/CardS';
-import Zone from '../components/zone';
-
+import Zone from '../components/Zone';
+import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,7 +26,17 @@ const useStyles = makeStyles(theme => ({
   contain: {
     display: "flex",
     justifyContent: "center",
-    flexDirection:"column"
+    flexDirection: "column"
+  },
+  zones: {
+    width:"80%",
+    display: "flex",
+    justifyContent: "space-between",
+  alignItems:"center"
+  },
+  chip:{
+    widht:"80%",
+    margin:"2%"
   }
 }));
 
@@ -45,12 +55,23 @@ const ViewDetail = () => {
             <Chips />
             <Chips />
             <Chips />
+            <Chips />
             <IconBtn className={classes.icone} />
           </Container>
         </Grid>
         <Grid item xs={4}>
           <CardS />
-          <Zone></Zone>
+          <h5 className={classes.subtitle}>Zonas</h5>
+          <div className={classes.zones}>
+            <Zone />
+            <Zone />
+            <Zone />
+          </div>
+          <h5 className={classes.subtitle}>Eventos</h5>
+          <div className={classes.contain}>
+            <Chip label="Basic Chip" className={classes.chip} />
+            <Chip label="Basic Chip" className={classes.chip} />
+          </div>
         </Grid>
       </Grid>
     </div>
