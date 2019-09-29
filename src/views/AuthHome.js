@@ -9,18 +9,20 @@ const AuthHome = () => {
     <div className="container">
       <h2>Ingresa tus datos</h2>
       <Login />
-        <div className="social-btn icons">
-          <i className="fa fa-facebook-official"></i>
-          <i className="fa fa-google"></i>
-        </div>
-    
+      <div className="social-btn icons">
+        <i className="fa fa-facebook-official"></i>
+        <i className="fa fa-google"></i>
+      </div>
+
       <div>
         <Link to="/mapi">
           <Btn>Login</Btn>
         </Link>
         <div className="container">
-        <p className="small">¿Problemas con tu cuenta? </p>
-        <Link className="link">Resuelvelos aquí</Link>
+          <p className="small">¿Problemas con tu cuenta? </p>
+          <Link to="/help" className="link">
+            Resuelvelos aquí
+          </Link>
         </div>
       </div>
     </div>

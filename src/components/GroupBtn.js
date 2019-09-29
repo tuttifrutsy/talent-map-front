@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import agroland from "../images/lands/tl2020-home-land-agro-B-210x310.png";
 import blockLand from "../images/lands/tl2020-home-land-blockchain-b-210x310.png";
@@ -7,12 +7,28 @@ import creLand from "../images/lands/tl2020-home-land-creative-b-210x310.png";
 import devLand from "../images/lands/tl2020-home-land-developer-b-210x310.png";
 import gamLand from "../images/lands/tl2020-home-land-gamer-b-210x310.png";
 import ironLand from "../images/lands/land-iron.png";
-
 import PopperLand from "./Popper";
 
-const GroupBtn = () => {
+const GroupBtn = (props) => {
+ const sections = props.sections;
+ 
+ 
+ console.log(sections);
+ 
+//  let landsName = sections.map((section) =>{
+//    return section.title
+//  })
+
+//  let landsImg = sections.map(section => {
+//    return section.title;
+//  });
+
+//  let landsId = sections.map((section)=>{
+//    return section._id
+//  })
   return (
     <div >
+      
       <div className="Ironbtn">
         <PopperLand  title="Ironland" url={ironLand} />
       </div>
@@ -23,7 +39,7 @@ const GroupBtn = () => {
         <PopperLand title="Blockchainland" url={blockLand}/>
       </div>
       <div className="creabtn">
-        <PopperLand title="Creativeland" url={creLand}/>
+        <PopperLand title={"data"} url={creLand}/>
       </div>
       <div className="devbtn">
         <PopperLand title="Developer" url={devLand}/>

@@ -9,9 +9,10 @@ import Navbar from "./components/Navbar";
 import ViewDetail from './views/ViewDetail';
 import SpeakerDetail from './views/SpeakerDetail';
 import AlignItemsList from './views/AllContet';
- 
+
 function App() {
   return (
+    
     <div className="App">
       <Navbar />
       <Switch>

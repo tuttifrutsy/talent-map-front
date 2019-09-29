@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import GroupBtn from '../components/GroupBtn';
 import mapa from '../images/t-map.png'
 import '../App.css';
 
 
-const Mapa = () => {
+const Mapa = (props) => {
+
+  const sections = props.dataSections
+
   return (
     <div className="map">
          <img src={mapa} alt="mapa" className="mapr" />   
-        <GroupBtn />
-        
-
+        <GroupBtn sections={sections}/>
     </div>
   );
 };
