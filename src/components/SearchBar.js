@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import InputBase from "@material-ui/core/InputBase";
 import {
   createStyles,
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1
     },
-  
+
     title: {
       flexGrow: 1,
       display: "none",
@@ -62,8 +62,49 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const SearchBar = () => {
+const SearchBar = props => {
+  const misDatos = props.dataSection;
   const classes = useStyles();
+  const [search, setSearch] = useState("");
+  //Options
+  //[0] -> Events
+  //[1] -> Lands
+  //[2] -> Speakers
+  //[3] -> Sponsor
+  //[4] -> Stages
+  const getSearch = e => {
+    setSearch(e.target.value);
+  };
+  const getAllData = () => {
+    fetch("url", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: {
+        search: search,
+        searchIn: ["0", "1", "2"]
+      }
+    })
+      .then(resp => {
+        resp.json().then(results => {
+          console.log(results);
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+  const options = [
+    [
+      {
+        name: "Freddy Vega",
+        empresa: "Platzi",
+        cargo: "CEO"
+      }
+    ]
+  ];
+  console.log(misDatos, "nada");
   return (
     <div>
       <div className={classes.search}>
@@ -77,10 +118,12 @@ const SearchBar = () => {
             input: classes.inputInput
           }}
           inputProps={{ "aria-label": "search" }}
+          onChange={getSearch}
         />
+        <button onClick={getAllData}>Search</button>
       </div>
     </div>
   );
-}
+};
 
 export default SearchBar;

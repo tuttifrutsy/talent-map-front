@@ -8,6 +8,7 @@ import Switches from "../components/switch";
 
 class Mapi extends Component {
   state = {
+    loading: true,
     sections: []
   };
 
@@ -16,7 +17,8 @@ class Mapi extends Component {
       .then(res => res.json())
       .then(data => {
         this.setState({
-          sections: data.sections
+          sections: data.sections,
+          loading: false
         });
       })
       .catch(err => console.log(err));
@@ -24,23 +26,23 @@ class Mapi extends Component {
 
   render() {
     const dataSections = [...this.state.sections];
-
     return (
       <div>
-        {dataSections.map((dato, i) => {
-          return <li key={i}>{dato.title}</li>;
-        })}
-        <Grid container spacing={2}>
-          <Grid item xs={3}>
-            <div className="searches">
-              <SearchBar dataSections={dataSections} />
-              <Switches dataSections={dataSections} />
-            </div>
+        {this.state.loading || !this.state.sections ? (
+          <div>Loading</div>
+        ) : (
+          <Grid container spacing={2}>
+            <Grid item xs={3}>
+              <div className="searches">
+                <SearchBar dataSections={dataSections} />
+                <Switches dataSections={dataSections} />
+              </div>
+            </Grid>
+            <Grid item xs={9}>
+              <Mapa dataSections={dataSections} />
+            </Grid>
           </Grid>
-          <Grid item xs={9}>
-            <Mapa dataSections={dataSections} />
-          </Grid>
-        </Grid>
+        )}
       </div>
     );
   }

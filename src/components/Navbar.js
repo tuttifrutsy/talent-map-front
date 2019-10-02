@@ -6,6 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import talentLogo from "../images/TL2019.png";
+import Swipeable from './SideMenu';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,15 +32,8 @@ const Navbar = () => {
         <Toolbar className="toolbar">
           <Link to="/">
             <img src={talentLogo} alt="logo" className="logoPrincipal" />
-          </Link>
-          <IconButton
-            edge="end"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon className="icon" />
-          </IconButton>
+          </Link> 
+            <Swipeable/>
         </Toolbar>
       </AppBar>
     </div>

@@ -1,0 +1,516 @@
+{
+  "lands" :[
+      {
+        "title": "Agro Land",
+        "description": "Por primera vez interactuamos con el ecosistema de la tecnología en el campo.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-agro-B-210x310.png",
+        "id": "5d8eab90a079923ee1126dba"
+      },
+       {
+        "title": "Developer Land",
+        "description": "Nada está escrito y todo es programable. bienvenido a la tierra de los desarroladores. Una de las zonas que pareciera ser milenaria dentro de este ecosistema o quizá ¿es qué ha formado parte de otra historia?",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-developer-b-210x310.png",
+        "id": "5d8eab90a079923ee1126db5"
+      },
+      {
+        "title": "Superpoderes",
+        "description": "La cultura pop ha demostradop que un personaje exitoso de ficción y aventura cuantan con personalidad y talento que los hace únicos",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/03/Logo-Superpoderes-540x230.png",
+        "id": "5d8eab90a079923ee1126dbc"
+      },
+      {
+        "title": "Zapopan Ciudad de los niños",
+        "description": "Zona abierta a cargo del Municipio de Zapopan",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/Zapopan-Ciudad-de-los-ninos-400x210.png",
+        "id": "5d8eab90a079923ee1126dbe"
+      },
+      {
+        "title": "Talent Jobs",
+        "description": "Busca promover el talento joven del país, vinculando con oportunidades de desarrolo profesional.",
+        "imgUrl": "https://talent-jobs.net/wp-content/uploads/2017/08/logo-jobs-black.png",
+        "id": "5d8eab90a079923ee1126dc0"
+      },
+      {
+        "title": "Blockchain Land",
+        "description": "Tierra dedicada por completo a las nuevas tecnologías y tendencias que cada vez están tomando mayor terreno en matería de economía tradicional.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-blockchain-b-210x310.png",
+        "id": "5d8eab90a079923ee1126db6"
+      },
+      {
+        "title": "Gamer Land",
+        "description": "Los conceptos de diversión y educación aquí no están planeados. Hay acción de sobra.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-gamer-b-210x310.png",
+        "id": "5d8eab90a079923ee1126db7"
+      },
+      {
+        "title": "Creative Land",
+        "description": "Es el espacio donde convergen los Talentos Creativos, para el desarrollo de ides y proyectos enfocados en el diseño, música, moda, comic y transmedia",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-creative-b-210x310.png",
+        "id": "5d8eab90a079923ee1126db4"
+      },
+      {
+        "title": "Iron Land",
+        "description": "Una tierra dedicada a dar forma tangible a la tecnología, donde la creación, las adiciones o mejoras toman su lugar.",
+        "imgUrl": "Una tierra dedicada a dar forma tangible a la tecnología, donde la creación, las adiciones o mejoras toman su lugar.",
+        "id": "5d8eab90a079923ee1126db9"
+      },
+      {
+        "title": "Bussiness Land",
+        "description": "Re-inventar las nuevas modalidades de hacer negocios es unos de los objetivos de esta tierra",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/07/tl2020-home-land-business-b-210x310.png",
+        "id": "5d8eab90a079923ee1126db8"
+      },
+      {
+        "title": "Recrea Land",
+        "description": "Zona abierta con actividades lúdicas para promover la ciencia, ingeniería e innovación a temprana edad",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/Recreland-400x210.png",
+        "id": "5d8eab90a079923ee1126dbd"
+      },
+      {
+        "title": "Agro Land",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eab90a079923ee1126dc1"
+      },
+      {
+        "title": "Talent Hackathon",
+        "description": "Competencia contra reloj en la que los participantes podrán buscar soluciones en grupo a problemas sociales tecnológicos y/ o sustentables.",
+        "imgUrl": "",
+        "id": "String"
+      },
+      {
+        "title": "Talent Woman",
+        "description": "Movimeinto que busca revindicar la participaciópn de la mujer en áreas de la ciencia, tecnología y negocios",
+        "imgUrl": "https://talent-woman.org/wp-content/uploads/2019/08/Talent-Woman-B-LR.png",
+        "id": "5d8eab90a079923ee1126dbb"
+      },
+      {
+        "title": "Talent Education",
+        "description": "Iniciativa de talent Network, para crear un espacio de disción y debate par los temas de actualización tecnologíca y su impacto en la brecha generacional",
+        "imgUrl": "String",
+        "id": "Iniciativa de talent Network, para crear un espacio de disción y debate par los temas de actualización tecnologíca y su impacto en la brecha generacional"
+      }   
+    ],
+   "speakers": [
+      {
+        "title": "Alejandro Lomelín",
+        "description": "Presidente de la Red Global MX de talentos en el extranjero del Nodo Zacatecas y es miembro fundador del primer espacio de Co-Working en Zacatecas, Hacker Garage Zacatecas.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/02/tl2019-speaker-blockchain-Luis-Daniel-Beltran.jpg",
+        "id": "5d8ed3051237af413b3096ec"
+      },
+      {
+        "title": "Diego Flores Jiménez",
+        "description": "Internacionalista con interés y experiencia en el liderazgo joven y eficaz como un proceso de transformación",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-superpoderes-Diego-Flores-Jimenez.jpg",
+        "id": "5d9410627b524b0f4f85bf42"
+      },
+      {
+        "title": "Helios Herrera",
+        "description": "Conferenciante, escritor, colaborador en diversos medios de comunicación. | Experto en vincular Desarrollo Humano y Productividad.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/02/tl2019-speaker-ironland-Diego-Guerrero.jpg",
+        "id": "5d9410627b524b0f4f85bf43"
+      },
+      {
+        "title": "Alejandro García Romero",
+        "description": "Jóven empresario mexicano.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/02/tl2019-speaker-developer-Saul-Jimenez-Camacho.jpg",
+        "id": "5d9410627b524b0f4f85bf44"
+      },
+      {
+        "title": "Lucero Miranda Ballesteros",
+        "description": "Profesora del Tec de Monterrey y fundadora y artista de ITARTI diseño",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-teducation-Lucero-Miranda-Ballesteros.jpg",
+        "id": "5d9410627b524b0f4f85bf45"
+      },
+      {
+        "title": "Bárbara Aguilera Arcos",
+        "description": "Gerente de desarrollo al ecosistema educativo IBM México",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-teducation-Barbara-Aguilera-Arcos.jpg",
+        "id": "5d9410627b524b0f4f85bf46"
+      },{
+        "title": "Manuel Moreno Castañeda",
+        "description": "Profesor en todos los niveles educativos.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-teducation-Manuel-Moreno-Castaneda.jpg",
+        "id": "5d9410627b524b0f4f85bf47"
+      },{
+        "title": "Diana Andrade",
+        "description": "Gerente de Vinculación Museo-Escuela en Papalote Museo del Niño.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-teducation-Diana-Andrade.jpg",
+        "id": "5d9410627b524b0f4f85bf48"
+      },
+      {
+        "title": "Tina Hovsepian",
+        "description": "Engineer doing non-engineering stuff for engineers.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/02/tl2019-speaker-future-Guadalupe-Avila.jpg",
+        "id": "5d9410627b524b0f4f85bf49"
+      },
+      {
+        "title": "Ruth Vela Huerta",
+        "description": "Engineer doing non-engineering stuff for engineers.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/02/tl2019-speaker-future-Guadalupe-Avila.jpg",
+        "id": "5d9410627b524b0f4f85bf4a"
+      },
+      {
+        "title": "Lenia Ruvalcaba",
+        "description": "Doble medallista paralímpica, promotora de los derechos de las personas con discapacidad y promotora de Judo",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/03/tl2019-speaker-twoman-Lenia-Ruvalcaba.jpg",
+        "id": "5d9410627b524b0f4f85bf4b"
+      },
+      {
+        "title": "Leonardo Rico",
+        "description": "Ingeniero en Sistemas Electrónicos graduado del TEC de Monterrey Campus Estado de México.",
+        "imgUrl": "https://www.talent-land.mx/wp-content/uploads/2019/04/tl2019-speaker-agro-Leonardo-Rico.jpg",
+        "id": "5d9410627b524b0f4f85bf4c"
+      }
+    ],
+    "stages": [
+      {
+        "title": "TALENT WOMAN",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3e1"
+      },
+      {
+        "title": "HACKATHON WORKSHOP 1",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3db"
+      },
+      {
+        "title": "HACKATHON",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3da"
+      },
+      {
+        "title": "JALISCO",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "JALISCO"
+      },
+      {
+        "title": "Agro Land",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "String"
+      },
+      {
+        "title": "INNOVATION ROOM",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d2"
+      },
+      {
+        "title": "POSIBLE ROOM",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d1"
+      },
+      {
+        "title": "MARKETING",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d0"
+      },
+      {
+        "title": "E-COMMERCE",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3cf"
+      },
+      {
+        "title": "EMPRENDEDORES",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3ce"
+      },
+      {
+        "title": "A.I & IOT",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b3"
+      },
+      {
+        "title": "MESA DE TALLERES 4",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3ca"
+      },
+      {
+        "title": "MESA DE TALLERES 3",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c9"
+      },
+      {
+        "title": "MESA DE TALLERES 2",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c8"
+      },
+      {
+        "title": "MESA DE TALLERES 1",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c7"
+      },
+      {
+        "title": "CRAFTING",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c6"
+      },
+      {
+        "title": "MAKER ED",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c5"
+      },
+      {
+        "title": "LTH",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c4"
+      },
+      {
+        "title": "MAKERS, ROBOTS & DRONES",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c3"
+      },
+      {
+        "title": "ENERGÍA - INDUSTRIA 4.0",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c2"
+      },
+      {
+        "title": "Dremel + Bosch Carpintería",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3cc"
+      },
+      {
+        "title": "CARPINTERÍA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c4"
+      },
+      {
+        "title": "MODDING",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3cb"
+      },
+      {
+        "title": "AULA TRANSMEDIA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3c0"
+      },
+      {
+        "title": "SALA DE VÍDEO",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3bf"
+      },
+      {
+        "title": "SALA DE FOTOGRAFÍA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3be"
+      },
+      {
+        "title": "AULA DE MEDIOS DIGITAL",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3bd"
+      },
+      {
+        "title": "CIUDAD CREATIVA DIGITAL",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3bc"
+      },
+      {
+        "title": "C4 - PABELLÓN ADOBE",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3ba"
+      },
+      {
+        "title": "DESIGN",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b9"
+      },
+      {
+        "title": "FASHION",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b8"
+      },
+      {
+        "title": "TRANSMEDIA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b7"
+      },
+      {
+        "title": "TABLE TOP",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d9"
+      },
+      {
+        "title": "SPEEDCUBES",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d8"
+      },
+      {
+        "title": "AJEDREZ",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d7"
+      },
+      {
+        "title": "NVIDIA GAMING ARENA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d6"
+      },
+      {
+        "title": "SMART COLISEUM",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d5"
+      },
+      {
+        "title": "BITSO LAB",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d4"
+      },
+      {
+        "title": "BLOCKCHAIN",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3d3"
+      },
+      {
+        "title": "GUADALAJARA",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3de"
+      },
+      {
+        "title": "SUPERPODERES (SOFT SKILLS)",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3df"
+      },
+      {
+        "title": "AGRO",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3e2"
+      },
+      {
+        "title": "DEVELOPER LAB - WORKSHOP",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b6"
+      },
+      {
+        "title": "CONNECTORY",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b5"
+      },{
+        "title": "WORKSHOP UDG",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3bb"
+      },{
+        "title": "DEV. GAMES & VR",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b4"
+      },{
+        "title": "CLOUD",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d8eb64e1c6bb53fb7ccb3b2"
+      }
+    ],
+    "events": [
+      {
+        "title": "Artificial Intelligence and how it will be much more disruptive and exciting to our lives, than the personal computer",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a0c"
+      },
+      {
+        "title": "Roomie Bot creadores de robots humanoides: Como no quedarte en la investigación y llevarlos al “Business",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a0d"
+      },
+      {
+        "title": "10 ideas de ciencia ficción que están a punto de ser realidad",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a0e"
+      },
+      {
+        "title": "Creando una real-time Progressive Web Application con Vue.js, Node.js y Socket.io.",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a0f"
+      },
+      {
+        "title": "Cleaning up the mess: Estilos arquitectónicos para la era de la nube.",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a10"
+      },
+      {
+        "title": "Arquitectura y despliegue de MySQL para soportar tráfico de alto volumen.",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a11"
+      },
+      {
+        "title": "mHealth: Inteligencia artificial integrada a la salud",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a12"
+      },
+      {
+        "title": "El poder del almacenamiento en el mundo de los videojuegos",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a13"
+      },
+      {
+        "title": "Electrónica y materiales exóticos",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a15"
+      },
+      {
+        "title": "Artificial Intelligence and how it will be much more disruptive and exciting to our lives, than the personal computer",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a16"
+      },
+      {
+        "title": "Roomie Bot creadores de robots humanoides: Como no quedarte en la investigación y llevarlos al “Business",
+        "description": "String",
+        "imgUrl": "String",
+        "id": "5d942f1ce36f7210b8d23a17"
+      }
+    ]
+  
+}

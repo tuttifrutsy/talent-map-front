@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-import CardB from "../components/CardB";
+import CardB from "./CardB";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Chips from '../components/Chip';
-import IconBtn from '../components/Iconbtn';
-import CardS from '../components/CardS';
-import Zone from '../components/Zone';
+import Chips from "./Chip";
+import IconBtn from "./Iconbtn";
+import CardS from "./CardS";
+import Zone from "./Zone";
 import Chip from "@material-ui/core/Chip";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,47 +30,46 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column"
   },
   zones: {
-    width:"80%",
+    width: "80%",
     display: "flex",
     justifyContent: "space-between",
-  alignItems:"center"
+    alignItems: "center"
   },
-  chip:{
-    widht:"80%",
-    margin:"2%"
+  chip: {
+    widht: "80%",
+    margin: "2%"
   }
 }));
 
-const ViewDetail = () => {
+const ZoneViewDetail = ({name, description, events, zone}) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <h2 style={{ textAlign: "center", padding: "1%" }}>Land</h2>
+          <h2 style={{ textAlign: "center", padding: "1%" }}>{name}</h2>
         </Grid>
         <Grid item xs={8}>
-          <CardB />
+          <CardB title={zone} description={description}/>
           <Container className={classes.contain}>
-            <h5 className={classes.subtitle}>Speaker</h5>
-            <Chips />
-            <Chips />
-            <Chips />
-            <Chips />
-            <IconBtn className={classes.icone} />
+            <h5 className={classes.subtitle}>Speakers</h5>
+          
+            <Link className={classes.icone}>
+              <IconBtn />
+            </Link>
           </Container>
         </Grid>
         <Grid item xs={4}>
           <CardS />
-          <h5 className={classes.subtitle}>Zonas</h5>
-          <div className={classes.zones}>
-            <Zone />
-            <Zone />
-            <Zone />
-          </div>
           <h5 className={classes.subtitle}>Eventos</h5>
           <div className={classes.contain}>
-            <Chip label="Basic Chip" className={classes.chip} />
+            {
+              events.sort(() =>Math.random() -0.5)
+              .slice(-0,5)
+              .map((e, i) => {
+                return <Chip labe={`${e.name}`} className={classes.chip} />
+              })
+            }
             <Chip label="Basic Chip" className={classes.chip} />
           </div>
         </Grid>
@@ -78,4 +78,4 @@ const ViewDetail = () => {
   );
 };
 
-export default ViewDetail;
+export default ZoneViewDetail;

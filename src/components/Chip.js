@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   },
   chip: {
     margin: "1.5%",
-    width: 500,
+    width: 400,
     padding:"2%",
     color: "#001355",
     backgroundColor: "#23ca0f",
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Chips = () => {
+const Chips = (props) => {
   const classes = useStyles();
 
   const handleDelete = () => {
@@ -34,9 +34,9 @@ const Chips = () => {
     <div className={classes.root}>
       <Chip
         avatar={
-          <Avatar alt="Natacha" src="/static/images/avatar/1.jpg"/>
+          <Avatar alt="Natacha" src={`${props.avatar}`}/>
         }
-        label="Clickable Chip"
+        label={props.name}
         onClick={handleClick}
         className={classes.chip}
       />

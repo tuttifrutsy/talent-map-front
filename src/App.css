@@ -156,6 +156,8 @@ a {
 .mapr {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: -1;
 }
 .container .makeStyles-margin-65 {
   margin: auto;
@@ -187,19 +189,19 @@ a {
 
 .Ironbtn {
   position: absolute;
-  top: 40%;
+  top: 38%;
   right: 22%;
-}
+ }
 
 .agrobtn {
   position: absolute;
-  top: 34%;
-  right: 16%;
+  top: 32%;
+  right: 15.5%;
 }
 
 .blkbtn {
   position: absolute;
-  top: 44%;
+  top: 40%;
   left: 52%;
 }
 
@@ -211,14 +213,14 @@ a {
 
 .devbtn {
   position: absolute;
-  top: 73%;
+  top: 71%;
   left: 40%;
 }
 
 .gambtn {
   position: absolute;
   top: 42%;
-  left: 45%;
+  left: 46%;
 }
 .bsnbtn {
   position: absolute;
@@ -228,24 +230,24 @@ a {
 
 .wbtn {
   position: absolute;
-  top: 54%;
+  top: 52%;
   left: 50%;
 }
 
 .hbtn {
   position: absolute;
-  top: 87%;
-  left: 33%;
+  top: 83%;
+  left: 31%;
 }
 
 .mbtn {
   position: absolute;
-  top: 63%;
+  top: 62%;
   left: 50%;
 }
 .jbtn {
   position: absolute;
-  top: 67%;
+  top: 63%;
   right: 25%;
 }
 .ebtn {
@@ -256,7 +258,7 @@ a {
 
 .sbtn {
   position: absolute;
-  top: 54%;
+  top: 52%;
   right: 28%;
 }
 
@@ -268,8 +270,8 @@ a {
 
 .rbtn {
   position: absolute;
-  top: 73%;
-  right: 10%;
+  top: 70%;
+  right: 9%;
 }
 
 .rlbtn {
@@ -279,40 +281,40 @@ a {
 }
 .mnbtn {
   position: absolute;
-  top: 89%;
+  top: 86%;
   left: 40%;
 }
 
 .batlebtn {
   position: absolute;
-  top: 49%;
+  top: 48%;
   left: 40.5%;
 }
 .smartgbtn {
   position: absolute;
-  top: 54%;
+  top: 56%;
   left: 40.5%;
 }
 .colliseumbtn {
   position: absolute;
-  top: 41.5%;
+  top: 38.5%;
   left: 40.5%;
 }
 .makerbtn {
   position: absolute;
-  top: 29%;
-  right: 27.5%;
+  top: 28%;
+  right: 27%;
 }
 .dronebtn {
   position: absolute;
-  top: 32%;
+  top: 28%;
   right: 22%;
 }
 .gardenbtn {
   position: absolute;
   top: 85%;
   right: 18.5%;
-}
+} 
 
 .MuiSwitch-root .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
   background-color: #23ca0f;
@@ -330,3 +332,6 @@ a {
   margin: 5%;
 }
 
+ul{
+  display: inline;
+}

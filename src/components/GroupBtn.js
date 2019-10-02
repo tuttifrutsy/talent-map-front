@@ -1,105 +1,205 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../App.css';
-import agroland from "../images/lands/tl2020-home-land-agro-B-210x310.png";
-import blockLand from "../images/lands/tl2020-home-land-blockchain-b-210x310.png";
-import busLand from "../images/lands/tl2020-home-land-business-b-210x310.png";
-import creLand from "../images/lands/tl2020-home-land-creative-b-210x310.png";
-import devLand from "../images/lands/tl2020-home-land-developer-b-210x310.png";
-import gamLand from "../images/lands/tl2020-home-land-gamer-b-210x310.png";
+
 import ironLand from "../images/lands/land-iron.png";
 import PopperLand from "./Popper";
 
 const GroupBtn = (props) => {
- const sections = props.sections;
+  const sections = props.sections;
  
- 
- console.log(sections);
- 
-//  let landsName = sections.map((section) =>{
-//    return section.title
-//  })
+  let landsName = sections.map((section) =>{
+    return section.title
+  });
 
-//  let landsImg = sections.map(section => {
-//    return section.title;
-//  });
+  let landsImg = sections.map(section => {
+    return section.logoUrl;
+  });
+  
+  let landsId = sections.map((section)=>{
+    return section._id
+  });
 
-//  let landsId = sections.map((section)=>{
-//    return section._id
-//  })
+  console.log(landsName)
+
   return (
     <div >
-      
       <div className="Ironbtn">
-        <PopperLand  title="Ironland" url={ironLand} />
+        <PopperLand
+          id={landsId[8]}
+          title={landsName[8]}
+          url={`${landsImg[8]}`}
+        />
       </div>
       <div className="agrobtn">
-        <PopperLand title="Agroland" url={agroland}/>
+        <PopperLand
+          id={landsId[1]}
+          title={landsName[1]}
+          url={`${landsImg[1]}`}
+        />
       </div>
       <div className="blkbtn">
-        <PopperLand title="Blockchainland" url={blockLand}/>
-      </div>
-      <div className="creabtn">
-        <PopperLand title={"data"} url={creLand}/>
+        <PopperLand
+          id={landsId[5]}
+          title={landsName[5]}
+          url={`${landsImg[5]}`}
+        />
       </div>
       <div className="devbtn">
-        <PopperLand title="Developer" url={devLand}/>
+        <PopperLand
+          id={landsId[0]}
+          title={landsName[0]}
+          url={`${landsImg[0]}`}
+        />
       </div>
       <div className="gambtn">
-        <PopperLand title="Gamerland" url={gamLand}/>
+        <PopperLand
+          id={landsId[6]}
+          title={landsName[6]}
+          url={`${landsImg[6]}`}
+        />
       </div>
       <div className="bsnbtn">
-        <PopperLand title="Businessland" url={busLand}/>
+        <PopperLand
+          id={landsId[9]}
+          title={landsName[9]}
+          url={`${landsImg[9]}`}
+        />
       </div>
       <div className="wbtn">
-        <PopperLand title="Talent Woman" url={ironLand}/>
+        <PopperLand
+          id={landsId[12]}
+          title={landsName[12]}
+          url={`${landsImg[12]}`}
+        />
       </div>
       <div className="hbtn">
-        <PopperLand title="Talen Hackathon" url={ironLand}/>
-      </div>
-      <div className="mbtn">
-        <PopperLand title="Talent Marketplace" url={ironLand}/>
+        <PopperLand
+          id={landsId[11]}
+          title={landsName[11]}
+          url={`${landsImg[11]}`}
+        />
       </div>
       <div className="jbtn">
-        <PopperLand title="Talent Jobs" url={ironLand}/>
+        <PopperLand
+          id={landsId[4]}
+          title={landsName[4]}
+          url={`${landsImg[4]}`}
+        />
+      </div>
+      <div className="mbtn">
+        <PopperLand
+          title="Talent Marketplace"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-talent-marketplace_ac5zdh.png"
+          }
+        />
       </div>
       <div className="ebtn">
-        <PopperLand title="Talent Education" url={ironLand}/>
+        <PopperLand
+          id={landsId[13]}
+          title={landsName[13]}
+          url={`${landsImg[13]}`}
+        />
       </div>
       <div className="sbtn">
-        <PopperLand title="Superpoderes" url={ironLand}/>
+        <PopperLand
+          id={landsId[2]}
+          title={landsName[2]}
+          url={`${landsImg[2]}`}
+        />
       </div>
+
       <div className="cbtn">
-        <PopperLand title="Ciudad de los Niños" url={ironLand}/>
-      </div>
-      <div className="cbtn">
-        <PopperLand title="Ciudad de los Niños" url={ironLand}/>
+        <PopperLand
+          id={landsId[3]}
+          title={landsName[3]}
+          url={`${landsImg[3]}`}
+        />
       </div>
       <div className="rbtn">
-        <PopperLand title="Registro" url={ironLand}/>
+        <PopperLand
+          title="Registro"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-registro_kuk2n4.png"
+          }
+        />
       </div>
       <div className="rlbtn">
-        <PopperLand title="Recrealand" url={ironLand}/>
+        <PopperLand
+          id={landsId[10]}
+          title={landsName[10]}
+          url={`${landsImg[10]}`}
+        />
+      </div>
+      <div className="creabtn">
+        <PopperLand
+          id={landsId[7]}
+          title={landsName[7]}
+          url={`${landsImg[7]}`}
+        />
       </div>
       <div className="mnbtn">
-        <PopperLand title="Main Stage" />
+        <PopperLand
+          id={"5d8eb64e1c6bb53fb7ccb3b1"}
+          title="Main Stage"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-escenario-jalisco_nidzl9.png"
+          }
+        />
       </div>
       <div className="batlebtn">
-        <PopperLand title="Batle Arena" />
+        <PopperLand
+          id={"5d8eb64e1c6bb53fb7ccb3d6"}
+          title="Batle Arena"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034428/talent-map/tl2019-logo-battle-arena_zr4eoj.png"
+          }
+        />
       </div>
       <div className="smartgbtn">
-        <PopperLand title="Smart Games" />
+        <PopperLand
+          id={"5d8eb64e1c6bb53fb7ccb3d7"}
+          title="Smart Games"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034428/talent-map/tl2019-logo-smart-games_fpwvd9.png"
+          }
+        />
       </div>
       <div className="colliseumbtn">
-        <PopperLand title="Smart Colliseum" />
+        <PopperLand
+          id={"5d8eb64e1c6bb53fb7ccb3d5"}
+          title="Smart Colliseum"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034428/talent-map/tl2019-logo-smart-coliseum_gqmf8f.png"
+          }
+        />
       </div>
       <div className="makerbtn">
-        <PopperLand title="Feria Maker" />
+        <PopperLand
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-feria-maker_vvqddk.png"
+          }
+          id={"5d8eb64e1c6bb53fb7ccb3c3"}
+          title="Feria Maker"
+        />
       </div>
       <div className="dronebtn">
-        <PopperLand title="Drone School"/>
+        <PopperLand
+          id={"5d8eb64e1c6bb53fb7ccb3b3"}
+          title="Drone School"
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-drone-school_py602n.png"
+          }
+        />
       </div>
       <div className="gardenbtn">
-        <PopperLand title="Startup Garden" />
+        <PopperLand
+          url={
+            "https://res.cloudinary.com/di4cdoua8/image/upload/v1570034427/talent-map/tl2019-logo-startup-garden_trlmsd.png"
+          }
+          id={"5d8eb64e1c6bb53fb7ccb3d1"}
+          title="Startup Garden"
+        />
       </div>
     </div>
   );

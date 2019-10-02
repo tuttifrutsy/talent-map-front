@@ -15,7 +15,7 @@ const AuthHome = () => {
       </div>
 
       <div>
-        <Link to="/mapi">
+        <Link to="/lands">
           <Btn>Login</Btn>
         </Link>
         <div className="container">

@@ -2,11 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Popper from "@material-ui/core/Popper";
 import Typography from "@material-ui/core/Typography";
-import BtnLand from './BtnLand';
+import BtnLand from "./BtnLand";
 import Fade from "@material-ui/core/Fade";
 import Paper from "@material-ui/core/Paper";
-import Iconbtn from '../components/Iconbtn';
-
+import Iconbtn from "../components/Iconbtn";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   typography: {
@@ -16,18 +16,20 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center"
   },
   logo: {
-    width: "30%",
+    width: "50%",
     padding: theme.spacing(2)
   },
   papper: {
     display: "flex",
-    backgroundColor: "#001355",
+    backgroundColor: "#293149",
+    boxShadow:
+      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     justifyContent: "center",
     alignItems: "center"
   }
 }));
 
- const PopperLand = (props) => {
+const PopperLand = props => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -65,16 +67,15 @@ const useStyles = makeStyles(theme => ({
           <Fade {...TransitionProps} timeout={350}>
             <Paper className={classes.papper}>
               <img src={props.url} alt="logo" className={classes.logo} />
-              <Typography className={classes.typography}>
-                {props.title}
-              </Typography>
-              <Iconbtn />
+              <Link to={`/lands/${props.id}`}>
+                <Iconbtn />
+              </Link>
             </Paper>
           </Fade>
         )}
       </Popper>
     </div>
   );
-}
+};
 
 export default PopperLand;

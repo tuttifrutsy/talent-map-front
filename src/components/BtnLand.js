@@ -13,15 +13,15 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    minWidth: 40,
-    width: '100%',
+    minWidth: 47,
+    width: '95%',
   },
   image: {
     position: 'relative',
-    height: 46,
+    height: 68,
     [theme.breakpoints.down('xs')]: {
-      width: '100% !important', // Overrides inline-style
-      height: 46,
+      width: '85% !important', // Overrides inline-style
+      height: 68,
     },
     '&:hover, &$focusVisible': {
       zIndex: 1,
@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
     top: 0,
     bottom: 0,
     backgroundSize: 'cover',
-    backgroundPosition: 'center 50%',
+    backgroundPosition: 'center 40%',
   },
   imageBackdrop: {
     position: 'absolute',
