@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ItemList from '../components/ItemList';
 import CropOriginalIcon from "@material-ui/icons/CropOriginal";
+import Loading from '../components/Loading';
 
 class AllStages extends Component {
   state = {
@@ -24,12 +25,12 @@ class AllStages extends Component {
     return (
       <React.Fragment>
         {this.state.loading || !this.state.stages ? (
-          <div>Loading ...</div>
+          <Loading/>
         ) : (
           <React.Fragment>
             <div style={{width:"80%", margin:"auto"}}>
             <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-              <CropOriginalIcon style={{ color: "#23ca0f", fontSize:"38px" }} />
+              <CropOriginalIcon style={{ color: "##001355", fontSize:"38px" }} />
               <h2>Stages</h2>
             </div>
             <ItemList stagesData={stagesData} />

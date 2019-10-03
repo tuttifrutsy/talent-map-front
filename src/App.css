@@ -33,6 +33,26 @@ h2 {
   color: white;
 }
 
+.App-Loading {
+  width: 100%;
+  background: transparent linear-gradient(1deg, #001355 0%, #000411 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo-loading {
+  animation: App-logo-spin infinite 5s linear;
+  height: 20vmin;
+  pointer-events: none;
+  margin: 0%;
+  padding: 0%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -349,7 +369,7 @@ ul{
   display: inline-block;
   border-radius: 75px;
   width: 50%;
-  background-color: #23ca0f;
+  background-color: #9FA7BF;
   color: #001355;
   margin: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -371,5 +391,22 @@ ul{
  .MuiList-root{
    width: 100%;
    display: flex;
-   flex-direction: column;
+   flex-flow: row wrap;
+   justify-content: space-around;
  }
+
+.MuiList-root .MuiListSubheader-root{
+   color:"white"
+ }
+
+.MuiInputBase-root .MuiOutlinedInput-notchedOutline{
+  border-color:#23ca0f;
+}
+
+.MuiFormControl-root .MuiFormHelperText-root{
+  color:#23ca0f;
+}
+
+.MuiFormControl-root  .MuiIconButton-root {
+  color: white;
+}

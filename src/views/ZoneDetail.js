@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ZoneViewDetail from "../components/ZoneViewDetail";
+import Loading from '../components/Loading';
 
 class ZoneDetail extends Component {
 
@@ -26,7 +27,7 @@ class ZoneDetail extends Component {
   return (
     <React.Fragment>
     {this.state.loading || !this.state.stage ? ( 
-    <div> Loading ...</div>
+    <Loading/>
     ) : (
       stageData.map((e, i) => {
         return (

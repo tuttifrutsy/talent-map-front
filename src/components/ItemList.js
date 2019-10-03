@@ -44,7 +44,7 @@ export default function ItemsList({ stagesData }) {
                 primary={`${e.name}`}
                 secondary={
                   <React.Fragment>
-                    <Link to={`/stage/${e._id}`}>
+                    <Link to={`/stages/${e._id}`}>
                       <Typography
                         component="span"
                         variant="body2"

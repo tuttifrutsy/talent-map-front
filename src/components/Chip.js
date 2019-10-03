@@ -12,28 +12,24 @@ const useStyles = makeStyles(theme => ({
   chip: {
     margin: "1.5%",
     width: 400,
-    padding:"2%",
+    padding: "2%",
     color: "#001355",
     backgroundColor: "#23ca0f",
-    justifyContent: "flex-start",
+    justifyContent: "flex-start"
   }
 }));
 
-const Chips = (props) => {
+const Chips = props => {
   const classes = useStyles();
-
-  
   return (
     <div className={classes.root}>
       <Chip
-        avatar={
-          <Avatar alt="Natacha" src={`${props.avatar}`}/>
-        }
+        avatar={<Avatar alt="Natacha" src={`${props.avatar}`} />}
         label={props.name}
         className={classes.chip}
       />
     </div>
   );
-}
+};
 
 export default Chips;

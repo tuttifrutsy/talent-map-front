@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ViewDetail from "../components/ViewDetail";
+import Loading from '../components/Loading';
 
 class LandDetail extends Component {
   state = {
@@ -26,7 +27,7 @@ class LandDetail extends Component {
     return (
       <React.Fragment>
         {this.state.loading || !this.state.land ? (
-          <div>Loading...</div>
+          <Loading/>
         ) : (
           landData.map((land,  i) => {
             return (

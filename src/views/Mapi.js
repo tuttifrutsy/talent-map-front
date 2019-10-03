@@ -5,6 +5,7 @@ import SearchBar from "../components/SearchBar";
 import Grid from "@material-ui/core/Grid";
 import "../App.css";
 import Switches from "../components/switch";
+import Loading from '../components/Loading';
 
 class Mapi extends Component {
   state = {
@@ -29,7 +30,7 @@ class Mapi extends Component {
     return (
       <div>
         {this.state.loading || !this.state.sections ? (
-          <div>Loading</div>
+          <Loading/>
         ) : (
           <Grid container spacing={2}>
             <Grid item xs={3}>

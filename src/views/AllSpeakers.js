@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
 import AllSpeakerList from '../components/AllSpeakerList'
+import Loading from '../components/Loading';
+
 class AllSpeakers extends Component {
   state = {
     speakers: [],
@@ -23,7 +25,7 @@ class AllSpeakers extends Component {
     return (
       <React.Fragment>
         {this.state.loading || !this.state.speakers ? (
-          <div>Loading ...</div>
+          <Loading/>
         ) : (
           <React.Fragment>
             <div style={{ width: "80%", margin: "auto" }}>

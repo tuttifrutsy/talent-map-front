@@ -45,7 +45,7 @@ console.log(speakersData)
                 primary={`${e.name}`}
                 secondary={
                   <React.Fragment>
-                    <Link to={`/stage/${e._id}`}>
+                    <Link to={`/speakers/${e._id}`}>
                       <Typography
                         component="span"
                         variant="body2"
