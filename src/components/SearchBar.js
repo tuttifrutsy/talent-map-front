@@ -62,8 +62,55 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const SearchBar = props => {
-  const misDatos = props.dataSection;
+const SearchBar = ({dataSections}) => {
+  const misDatos = dataSections;
+  
+  let landsName = misDatos.map(land => {
+    return land.title;
+  });
+
+  let events = [];
+   misDatos.map((land, i)=> {
+    events.push(land.events)
+  })
+
+  let eventsNames = events.map((event, i)=>{
+    return event.title
+  })
+  
+  let speakers = misDatos.map((speaker, i) => {
+    return speaker.speakers;
+  });
+
+  let stages = misDatos.map((stage, i) => {
+    return stage.stages;
+  });
+
+  
+
+//   let allNames =[]; 
+
+//  const getMeTheNames = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     let childArray = arr[i];
+//     for (let j = 0; j < childArray.length; j++) {
+//       allNames.push({ [j]: childArray[j].title });
+//     }
+//   }
+//  }
+
+//  getMeTheNames(landEvents); 
+ //getMeTheNames(landSpeakers);
+//  for(let i = 0; i < landEvents.length; i++){
+//    let childArray = landEvents[i];
+//    for(let j = 0; j < childArray.length; j++){
+//      landEventsNames.push( {[j]:childArray[j].title})
+//    }
+//  }
+
+
+
+  console.log(events, "nada");
   const classes = useStyles();
   const [search, setSearch] = useState("");
   //Options
@@ -104,7 +151,7 @@ const SearchBar = props => {
       }
     ]
   ];
-  console.log(misDatos, "nada");
+ 
   return (
     <div>
       <div className={classes.search}>
@@ -122,6 +169,7 @@ const SearchBar = props => {
         />
         <button onClick={getAllData}>Search</button>
       </div>
+     <li>mhkh</li>
     </div>
   );
 };

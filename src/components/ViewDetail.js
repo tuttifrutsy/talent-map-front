@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import CardB from "./CardB";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Chips from "./Chip";
-import IconBtn from "./Iconbtn";
 import CardS from "./CardS";
 import Zone from "./Zone";
 import Chip from "@material-ui/core/Chip";
@@ -29,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    alignItems:"center"
+    alignItems: "center"
   },
   zones: {
     width: "80%",
@@ -41,13 +40,21 @@ const useStyles = makeStyles(theme => ({
     widht: "100%",
     margin: "1%"
   },
-  icon:{
+  icon: {
     margin: "auto"
-  },
-
+  }
 }));
 
-const ViewDetail = ({ title, description, stages, speakers, events, logoUrl, imageBg, imageDetail }) => {
+const ViewDetail = ({
+  title,
+  description,
+  stages,
+  speakers,
+  events,
+  logoUrl,
+  imageBg,
+  imageDetail
+}) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -104,8 +111,12 @@ const ViewDetail = ({ title, description, stages, speakers, events, logoUrl, ima
               .slice(-0, 3)
               .map((e, i) => {
                 return (
-                  <Link id={`/events/${e._id}`}>
-                    <Chip label={`${e.title}`} className={classes.chip} />
+                  <Link to={`/events/${e._id}`} key={i}>
+                    <Chip
+                      key={i}
+                      label={`${e.title}`}
+                      className={classes.chip}
+                    />
                   </Link>
                 );
               })}

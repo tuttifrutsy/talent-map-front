@@ -13,12 +13,11 @@ import Typography from "@material-ui/core/Typography";
 import ExploreIcon from "@material-ui/icons/Explore";
 import PinDropIcon from "@material-ui/icons/PinDrop";
 
-
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 300,
     background: "none",
-    margin:"auto",
+    margin: "auto",
     color: "white",
     boxShadow:
       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -48,7 +47,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function CardS({imageDetail}) {
+export default function CardS({ imageDetail }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 

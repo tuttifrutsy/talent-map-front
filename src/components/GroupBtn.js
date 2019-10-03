@@ -1,28 +1,24 @@
 import React from 'react';
 import '../App.css';
-
-import ironLand from "../images/lands/land-iron.png";
 import PopperLand from "./Popper";
 
-const GroupBtn = (props) => {
+const GroupBtn = props => {
   const sections = props.sections;
- 
-  let landsName = sections.map((section) =>{
-    return section.title
+
+  let landsName = sections.map(section => {
+    return section.title;
   });
 
   let landsImg = sections.map(section => {
     return section.logoUrl;
   });
-  
-  let landsId = sections.map((section)=>{
-    return section._id
+
+  let landsId = sections.map(section => {
+    return section._id;
   });
 
-  console.log(landsName)
-
   return (
-    <div >
+    <div>
       <div className="Ironbtn">
         <PopperLand
           id={landsId[8]}
@@ -49,7 +45,7 @@ const GroupBtn = (props) => {
           id={landsId[0]}
           title={landsName[0]}
           url={`${landsImg[0]}`}
-        />
+        /> 
       </div>
       <div className="gambtn">
         <PopperLand
@@ -203,6 +199,6 @@ const GroupBtn = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default GroupBtn;

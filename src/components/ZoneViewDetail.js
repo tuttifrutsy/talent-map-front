@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import CardB from "./CardB";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Chips from "./Chip";
-import IconBtn from "./Iconbtn";
+
 import CardS from "./CardS";
-import Zone from "./Zone";
 import Chip from "@material-ui/core/Chip";
 import { Link } from "react-router-dom";
 
@@ -41,7 +39,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ZoneViewDetail = ({name, description, events, zone}) => {
+const ZoneViewDetail = ({ name, description, events, zone }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -50,26 +48,21 @@ const ZoneViewDetail = ({name, description, events, zone}) => {
           <h2 style={{ textAlign: "center", padding: "1%" }}>{name}</h2>
         </Grid>
         <Grid item xs={8}>
-          <CardB title={zone} description={description}/>
+          <CardB title={zone} description={description} />
           <Container className={classes.contain}>
             <h5 className={classes.subtitle}>Speakers</h5>
-          
-            <Link className={classes.icone}>
-              <IconBtn />
-            </Link>
           </Container>
         </Grid>
         <Grid item xs={4}>
           <CardS />
           <h5 className={classes.subtitle}>Eventos</h5>
           <div className={classes.contain}>
-            {
-              events.sort(() =>Math.random() -0.5)
-              .slice(-0,5)
+            {events
+              .sort(() => Math.random() - 0.5)
+              .slice(-0, 5)
               .map((e, i) => {
-                return <Chip labe={`${e.name}`} className={classes.chip} />
-              })
-            }
+                return <Chip labe={`${e.name}`} className={classes.chip} />;
+              })}
             <Chip label="Basic Chip" className={classes.chip} />
           </div>
         </Grid>

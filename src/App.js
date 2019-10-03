@@ -11,8 +11,11 @@ import Mapi from "./views/Mapi";
 import Navbar from "./components/Navbar";
 import LandDetail from "./views/LandDetail";
 import SpeakerDetail from "./views/SpeakerDetail";
-import AlignItemsList from "./views/AllContet";
+import AllSpeakers from "./views/AllSpeakers";
+import AllStages from './views/AllStages';
 import ZoneDetail from "./views/ZoneDetail";
+import AllEvents from "./views/AllEvents";
+import EventDetail from './views/EventDetail';
 
 class App extends Component {
   render() {
@@ -36,7 +39,7 @@ class App extends Component {
             component={withRouter(LandDetail)} />
           <Route 
             exact path="/stages" 
-            component={withRouter(AlignItemsList)} />
+            component={withRouter(AllStages)} />
           <Route 
             exact 
             path="/stages/:id" 
@@ -44,7 +47,7 @@ class App extends Component {
           <Route 
             exact 
             path="/speakers" 
-            component={withRouter(ZoneDetail)} />
+            component={withRouter(AllSpeakers)} />
           <Route
             exact
             path="/speakers/:id"
@@ -52,21 +55,12 @@ class App extends Component {
           />
           <Route 
            exact 
-           path="/speakers" 
-           component={withRouter(ZoneDetail)} />
-          <Route
-            exact
-            path="/events"
-            component={withRouter(SpeakerDetail)}
-          />
-          <Route 
-            exact 
-            path="/speakers" 
-            component={withRouter(ZoneDetail)} />
+           path="/events" 
+           component={withRouter(AllEvents)} />
           <Route
             exact
             path="/events/:id"
-            component={withRouter(SpeakerDetail)}
+            component={withRouter(EventDetail)}
           />
         </Switch>
       </div>

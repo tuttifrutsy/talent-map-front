@@ -22,7 +22,7 @@ class ZoneDetail extends Component {
   }
   render() {
     const stageData =[this.state.stage];
-    console.log(this.state.stage)
+  
   return (
     <React.Fragment>
     {this.state.loading || !this.state.stage ? ( 

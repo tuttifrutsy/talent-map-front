@@ -1,13 +1,12 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import '../App.css';
+import "../App.css";
 import { red } from "@material-ui/core/colors";
-
 
 const useStyles = makeStyles(theme => ({
   margin: {
@@ -26,12 +25,8 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-
-
-export default function InputWithIcon() {  
-
+export default function InputWithIcon() {
   const classes = useStyles();
-
 
   return (
     <div className={classes.margin}>

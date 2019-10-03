@@ -22,14 +22,7 @@ const useStyles = makeStyles(theme => ({
 const Chips = (props) => {
   const classes = useStyles();
 
-  const handleDelete = () => {
-    alert("You clicked the delete icon.");
-  };
-
-  const handleClick = () => {
-    alert("You clicked the Chip.");
-  };
-
+  
   return (
     <div className={classes.root}>
       <Chip
@@ -37,7 +30,6 @@ const Chips = (props) => {
           <Avatar alt="Natacha" src={`${props.avatar}`}/>
         }
         label={props.name}
-        onClick={handleClick}
         className={classes.chip}
       />
     </div>

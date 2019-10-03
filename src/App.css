@@ -335,3 +335,41 @@ a {
 ul{
   display: inline;
 }
+
+.MuiAvatar-root .MuiAvatar-img{
+  width: auto;
+}
+
+ .MuiListItemAvatar-root  .MuiAvatar-root{
+  width: 120px;
+  height: 120px;
+}
+
+.MuiListItem-root{
+  display: inline-block;
+  border-radius: 75px;
+  width: 50%;
+  background-color: #23ca0f;
+  color: #001355;
+  margin: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.MuiListItem-root .MuiListItemText-root {
+  padding-left: 5%;
+}
+
+.MuiList-root .MuiListItem-alignItemsFlexStart{
+   align-items: center;
+   
+}
+
+.MuiList-root .MuiListItem-root {
+   width: 40%;
+ }
+
+ .MuiList-root{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ }

@@ -3,13 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
 
-
 const useStyles = makeStyles(theme => ({
-  fab: { 
+  fab: {
     backgroundColor: "#23ca0f",
-    margin:"3%"
-  },
- 
+    margin: "3%"
+  }
 }));
 
 const IconBtn = () => {
@@ -22,6 +20,6 @@ const IconBtn = () => {
       </Fab>
     </div>
   );
-}
+};
 
 export default IconBtn;
