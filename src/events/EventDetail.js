@@ -11,7 +11,7 @@ import DuoChip from './DuoChip';
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import {Link} from 'react-router-dom';
-
+import IconButton from "@material-ui/core/IconButton";
 const useStyles = makeStyles({
   card: {
     maxWidth: 600,
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   }
 });
 
-const EventDetail = ({title, description, type, scheduledFor, speaker, stage, id}) => {
+const EventDetail = ({title, description, type, scheduledFor, speaker, stage, id, click}) => {
   const classes = useStyles();
   return (
     <div>
@@ -53,9 +53,9 @@ const EventDetail = ({title, description, type, scheduledFor, speaker, stage, id
               <Link to={`/events/edit/${id}`}>
                 <EditIcon color="secondary" />
               </Link>
-              <Link to={`/events/delete${id}`}>
-              <DeleteForeverIcon/>
-              </Link>
+              <IconButton onClick={click}>
+              <DeleteForeverIcon />
+              </IconButton>
             </CardActions>
           </Card>
         </Grid>

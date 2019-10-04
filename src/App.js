@@ -20,6 +20,7 @@ import InfoEvent from './events/InfoEvent';
 import EditEvent from './events/EditEvent';
 
 
+
 class App extends Component {
   render() {
     return (

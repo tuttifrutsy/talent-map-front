@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
 import data from '../data.json';
 import Typography from "@material-ui/core/Typography";
-import DatePicker from '../components/DatePicker';
 import axios from 'axios';
+import DateFnsUtils from "@date-io/date-fns";
+import {
+  MuiPickersUtilsProvider,
+  KeyboardTimePicker,
+  KeyboardDatePicker
+} from "@material-ui/pickers";
 
 class EditEvent extends Component {
   state = {
@@ -10,52 +15,41 @@ class EditEvent extends Component {
     speakers: data.speakers,
     stages: data.stages,
     stageSelected: "",
-    speakerSelected:"",
-    title:"",
-    description:"",
-    date: Date()
-  }
+    speakerSelected: "",
+    title: "",
+    description: "",
+    date: new Date("2014-08-18T21:11:54")
+  };
 
   onSubmit = async e => {
     //console.log(this.state.title, this.state.description)
     e.preventDefault();
-    const newEvent ={
+    const newEvent = {
       title: this.state.title,
-      description:this.state.description,
+      description: this.state.description,
       scheduledFor: this.state.date,
       speakerId: this.state.speakerSelected,
       stageId: this.state.stageSelected
-    }
-     const res = await axios.post("https://imap-talent.herokuapp.com/events", newEvent);
-     console.log(res);
+    };
+    const res = await axios.post(
+      "https://imap-talent.herokuapp.com/events",
+      newEvent
+    );
+    //console.log(res);
+
+    window.location.href = '/events';
   };
 
   onSelectChange = e => {
-    console.log(e.target.value, e.target.name)
+    console.log(e.target.value, e.target.name);
     this.setState({
       [e.target.name]: e.target.value
     });
   };
 
   onChangeDate = date => {
-    this.setState({});
-  }
-  // handleFormSubmit = (e) => {
-  //   const title = this.state.title;
-  //   const description = this.state.description;
-
-  //   e.preventDefault();
-  //   fetch(`https://imap-talent.herokuapp.com/events/${this.props.event._id}`, {
-  //     method:'PUT',
-  //     body: JSON.stringify(title, description),
-  //     headers:{
-  //       'Content-Type': 'application/json'}
-  //   })
-  //   .then(res => res.json())
-  //   .then(data => console.log(data))
-  //   .catch(err => console.log(err))
-
-  // }
+    this.setState({ date });
+  };
 
   render() {
     const speakers = this.state.speakers;
@@ -65,6 +59,9 @@ class EditEvent extends Component {
       <div>
         <Typography variant="h4" gutterBottom style={{ textAlign: "center" }}>
           Editar Evento
+        </Typography>
+        <Typography variant="h4" gutterBottom style={{ textAlign: "center" }}>
+          {}
         </Typography>
         <div className="form-group">
           <select
@@ -113,13 +110,38 @@ class EditEvent extends Component {
               name="description"
               required
               onChange={this.onSelectChange}
-            />
+            ></textarea>
           </div>
-          <DatePicker selected={this.state.date} onChange={this.onChangeDate} />
+          <div className="form-group">
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <KeyboardDatePicker
+                margin="normal"
+                id="date-picker-dialog"
+                label="Date picker dialog"
+                format="MM/dd/yyyy"
+                value={this.state.date}
+                onChange={this.onChangeDate}
+                KeyboardButtonProps={{
+                  "aria-label": "change date"
+                }}
+              />
+              <KeyboardTimePicker
+                margin="normal"
+                id="time-picker"
+                label="Time picker"
+                value={`${this.state.date}`}
+                selected={this.state.date}
+                onChange={this.onChangeDate}
+                KeyboardButtonProps={{
+                  "aria-label": "change time"
+                }}
+              />
+            </MuiPickersUtilsProvider>
+          </div>
+          <form onSubmit={this.onSubmit}>
+            <button type="submit">save </button>
+          </form>
         </div>
-        <form onSubmit={this.onSubmit}>
-          <button type="submit">save </button>
-        </form>
       </div>
     );
   }
