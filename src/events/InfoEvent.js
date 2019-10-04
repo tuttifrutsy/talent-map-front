@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EventDetail from "../components/EventDetail";
+import EventDetail from "./EventDetail";
 import Loading from '../components/Loading';
 
 class InfoEvent extends Component {

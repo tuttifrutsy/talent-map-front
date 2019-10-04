@@ -1,12 +1,11 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import CardB from "./CardB";
+import CardB from "../events/CardB";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
-import CardS from "./CardS";
+import CardS from "../land/CardS";
 import Chip from "@material-ui/core/Chip";
-import { Link } from "react-router-dom";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ZoneViewDetail = ({ name, description, events, zone }) => {
+const ZoneViewDetail = ({  image, name, description, events, zone }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -48,9 +47,10 @@ const ZoneViewDetail = ({ name, description, events, zone }) => {
           <h2 style={{ textAlign: "center", padding: "1%" }}>{name}</h2>
         </Grid>
         <Grid item xs={8}>
-          <CardB title={zone} description={description} />
+          
+          <CardB title={zone} description={description} imageBg={image}/>
           <Container className={classes.contain}>
-            <h5 className={classes.subtitle}>Speakers</h5>
+            
           </Container>
         </Grid>
         <Grid item xs={4}>
@@ -63,7 +63,7 @@ const ZoneViewDetail = ({ name, description, events, zone }) => {
               .map((e, i) => {
                 return <Chip labe={`${e.name}`} className={classes.chip} />;
               })}
-            <Chip label="Basic Chip" className={classes.chip} />
+            
           </div>
         </Grid>
       </Grid>

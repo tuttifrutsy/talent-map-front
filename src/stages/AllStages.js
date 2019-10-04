@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ItemList from '../components/ItemList';
+import ItemList from './ItemList';
 import CropOriginalIcon from "@material-ui/icons/CropOriginal";
 import Loading from '../components/Loading';
 

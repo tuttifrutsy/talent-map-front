@@ -21,7 +21,6 @@ const useStyles = makeStyles({
 
 const EventDetail = ({title, description, type, scheduledFor, speaker, stage, id}) => {
   const classes = useStyles();
-  console.log(scheduledFor)
   return (
     <div>
       <Grid>

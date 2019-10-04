@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
-import AllSpeakerList from '../components/AllSpeakerList'
+import AllSpeakerList from './AllSpeakerList'
 import Loading from '../components/Loading';
 
 class AllSpeakers extends Component {

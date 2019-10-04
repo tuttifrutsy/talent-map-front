@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import EventsList from '../components/AllEventsList';
+import EventsList from './AllEventsList';
 import RecentActorsIcon from "@material-ui/icons/RecentActors";
 import Loading from '../components/Loading';
 

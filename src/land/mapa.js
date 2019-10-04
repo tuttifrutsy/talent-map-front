@@ -1,5 +1,5 @@
 import React from "react";
-import GroupBtn from "../components/GroupBtn";
+import GroupBtn from "./GroupBtn";
 import mapa from "../images/t-map.png";
 import "../App.css";
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ViewDetail from "../components/ViewDetail";
+import ViewDetail from "./ViewDetail";
 import Loading from '../components/Loading';
 
 class LandDetail extends Component {

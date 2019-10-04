@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import CardB from "./CardB";
+import CardB from "../events/CardB";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Chips from "./Chip";
+import Chips from "../components/Chip";
 import CardS from "./CardS";
 import Zone from "./Zone";
 import Chip from "@material-ui/core/Chip";

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
-import Mapa from "../components/mapa";
+import Mapa from "./mapa";
 import SearchBar from "../components/SearchBar";
 import Grid from "@material-ui/core/Grid";
 import "../App.css";
@@ -29,21 +29,17 @@ class Mapi extends Component {
     const dataSections = [...this.state.sections];
     return (
       <div>
-        {this.state.loading || !this.state.sections ? (
+     {this.state.loading || !this.state.sections ? (
           <Loading/>
         ) : (
-          <Grid container spacing={2}>
-            <Grid item xs={3}>
-              <div className="searches">
+          <div>           
+              {/* <div className="searches">
                 <SearchBar dataSections={dataSections} />
                 <Switches dataSections={dataSections} />
-              </div>
-            </Grid>
-            <Grid item xs={9}>
+              </div> */}
               <Mapa dataSections={dataSections} />
-            </Grid>
-          </Grid>
-        )}
+          </div>
+        )} 
       </div>
     );
   }
