@@ -10,7 +10,7 @@ class AllSpeakers extends Component {
   };
 
   componentDidMount() {
-    fetch("https://imap-talent.herokuapp.com/speakers")
+    fetch("https://imap-talent.herokuapp.com/api/speakers")
       .then(res => res.json())
       .then(data => {
         this.setState({

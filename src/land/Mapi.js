@@ -14,7 +14,7 @@ class Mapi extends Component {
   };
 
   componentDidMount() {
-    fetch("https://imap-talent.herokuapp.com/lands")
+    fetch("https://imap-talent.herokuapp.com/api/lands")
       .then(res => res.json())
       .then(data => {
         this.setState({

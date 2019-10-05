@@ -399,7 +399,7 @@ ul{
  }
 
 .MuiList-root .MuiListSubheader-root{
-   color:"white"
+   color:white
  }
 
 .MuiInputBase-root .MuiOutlinedInput-notchedOutline{
@@ -416,4 +416,21 @@ ul{
 
 .MuiAppBar-colorPrimary .MuiAppBar-colorPrimary{
   background-color: none;
+}
+
+.form-login{
+  display: flex; 
+  justify-content: center; 
+  align-items:center;
+  flex-flow: column;
+  width:50%;
+  margin: auto;
+  height: 55vh;
+}
+
+.form-control {
+  width: 600px;
+  background: none;
+  color: white;
+  border-color: #23ca0f;
 }

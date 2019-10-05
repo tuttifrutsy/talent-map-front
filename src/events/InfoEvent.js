@@ -12,7 +12,7 @@ class InfoEvent extends Component {
   
   componentDidMount() {
     const { params } = this.props.match;
-    fetch(`https://imap-talent.herokuapp.com/events/${params.id}`)
+    fetch(`https://imap-talent.herokuapp.com/api/events/${params.id}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -24,7 +24,7 @@ class InfoEvent extends Component {
   }
 
   deleteEvent = async (id) => {
-   await axios.delete(`https://imap-talent.herokuapp.com/events/${id}`);
+   await axios.delete(`https://imap-talent.herokuapp.com/api/events/${id}`);
     console.log(id);
     window.location.href = "/events";
   }

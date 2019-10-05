@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import "../App.css";
 import { red } from "@material-ui/core/colors";
@@ -25,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function InputWithIcon() {
+export default function InputWithIcon({username, password}) {
   const classes = useStyles();
 
   return (
@@ -35,15 +34,7 @@ export default function InputWithIcon() {
           <AccountCircle className="icon" />
         </Grid>
         <Grid item>
-          <TextField id="input-with-icon-grid" label="Usuario" />
-        </Grid>
-      </Grid>
-      <Grid container spacing={2} alignItems="flex-end">
-        <Grid item>
-          <MailOutlineIcon className="icon" />
-        </Grid>
-        <Grid item>
-          <TextField id="input-with-icon-grid" label="Email" />
+          <TextField id="input-with-icon-grid" label="Usuario" value={username} />
         </Grid>
       </Grid>
       <Grid container spacing={2} alignItems="flex-end">
@@ -51,7 +42,7 @@ export default function InputWithIcon() {
           <LockOutlinedIcon className="icon" />
         </Grid>
         <Grid item>
-          <TextField id="input-with-icon-grid" label="Password" />
+          <TextField id="input-with-icon-grid" label="Password" value={password} />
         </Grid>
       </Grid>
     </div>

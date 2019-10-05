@@ -10,7 +10,7 @@ class AllEvents extends Component {
   };
 
   componentDidMount() {
-    fetch("https://imap-talent.herokuapp.com/events")
+    fetch("https://imap-talent.herokuapp.com/api/events")
       .then(res => res.json())
       .then(data => {
         this.setState({

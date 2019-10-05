@@ -10,7 +10,7 @@ class LandDetail extends Component {
 
   componentDidMount() {
     const { params } = this.props.match;
-    fetch(`https://imap-talent.herokuapp.com/lands/${params.id}`)
+    fetch(`https://imap-talent.herokuapp.com/api/lands/${params.id}`)
       .then(res => res.json())
       .then(data => {
         this.setState({

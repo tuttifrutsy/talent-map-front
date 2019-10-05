@@ -11,7 +11,7 @@ class ZoneDetail extends Component {
 
   componentDidMount() {
     const {params} = this.props.match;
-    fetch(`https://imap-talent.herokuapp.com/stage/${params.id}`)
+    fetch(`https://imap-talent.herokuapp.com/api/stage/${params.id}`)
     .then(res => res.json())
     .then(data => {
       this.setState({

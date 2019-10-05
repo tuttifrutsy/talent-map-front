@@ -9,7 +9,7 @@ class SpeakerViewDetail extends Component {
   }
   componentDidMount() {
     const {params}= this.props.match;
-    fetch(`https://imap-talent.herokuapp.com/speakers/${params.id}`)
+    fetch(`https://imap-talent.herokuapp.com/api/speakers/${params.id}`)
     .then(res => res.json())
     .then(data => {
       this.setState({

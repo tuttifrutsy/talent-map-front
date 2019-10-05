@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Navbar = () => {
   const classes = useStyles();
-
+  
   return (
     <div className={classes.root}>
       <AppBar position="static" >

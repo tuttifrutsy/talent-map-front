@@ -33,6 +33,7 @@ const useStyles = makeStyles({
 });
 
 export default function Swipeable() {
+  
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false
@@ -63,7 +64,7 @@ export default function Swipeable() {
             <ListItemIcon>
               <AccountCircleIcon style={{ color: "#23ca0f" }} />
             </ListItemIcon>
-            <ListItemText primary="Aca el Usuario" />
+            <ListItemText primary="Usuario" />
           </ListItem>
         </Link>
       </List>

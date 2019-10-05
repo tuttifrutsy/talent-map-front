@@ -10,7 +10,7 @@ class AllStages extends Component {
   };
 
   componentDidMount() {
-    fetch("https://imap-talent.herokuapp.com/stage")
+    fetch("https://imap-talent.herokuapp.com/api/stage")
       .then(res => res.json())
       .then(data => {
         this.setState({

@@ -3,6 +3,8 @@ import data from '../data.json';
 import Typography from "@material-ui/core/Typography";
 import axios from 'axios';
 import DateFnsUtils from "@date-io/date-fns";
+import Button from "@material-ui/core/Button";
+import SaveIcon from "@material-ui/icons/Save";
 import {
   MuiPickersUtilsProvider,
   KeyboardTimePicker,
@@ -32,10 +34,10 @@ class EditEvent extends Component {
       stageId: this.state.stageSelected
     };
     const res = await axios.post(
-      "https://imap-talent.herokuapp.com/events",
+      "https://imap-talent.herokuapp.com/api/events",
       newEvent
     );
-    //console.log(res);
+    console.log(res);
 
     window.location.href = '/events';
   };
@@ -56,7 +58,7 @@ class EditEvent extends Component {
     const stages = this.state.stages;
 
     return (
-      <div>
+      <div className="form-login">
         <Typography variant="h4" gutterBottom style={{ textAlign: "center" }}>
           Editar Evento
         </Typography>
@@ -92,6 +94,7 @@ class EditEvent extends Component {
               );
             })}
           </select>
+          </div>
           <div className="form-group">
             <input
               type="text"
@@ -139,10 +142,19 @@ class EditEvent extends Component {
             </MuiPickersUtilsProvider>
           </div>
           <form onSubmit={this.onSubmit}>
-            <button type="submit">save </button>
+            <Button
+              type="submit"
+              variant="contained"
+              size="large"
+              style={{ margin: "2%" }}
+              startIcon={<SaveIcon />}
+            >
+              Guardar
+            </Button>
+        
           </form>
         </div>
-      </div>
+      
     );
   }
 }
