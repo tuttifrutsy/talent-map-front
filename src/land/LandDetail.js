@@ -22,8 +22,7 @@ class LandDetail extends Component {
   }
   render() {
     const landData = [this.state.land];
-    // const landDataStages = [this.state.land.stages];
-    // console.log(landDataStages, "del LAndDetail");
+   
     return (
       <React.Fragment>
         {this.state.loading || !this.state.land ? (

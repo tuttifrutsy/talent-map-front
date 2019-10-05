@@ -1,4 +1,4 @@
-import React, {useStae, createContext, useState} from 'react';
+import React, {useState, createContext} from 'react';
 import todos from '../data.json';
 
 export const TodoContext = createContext();

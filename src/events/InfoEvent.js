@@ -25,13 +25,13 @@ class InfoEvent extends Component {
 
   deleteEvent = async (id) => {
    await axios.delete(`https://imap-talent.herokuapp.com/api/events/${id}`);
-    console.log(id);
+    
     window.location.href = "/events";
   }
 
   render() {
     const eventData = [this.state.event];
-    //console.log(this.state.event);
+    
     return (
       <React.Fragment>
         {this.state.loading || !this.state.event ? (

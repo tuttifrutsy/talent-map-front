@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import Mapa from "./mapa";
-import SearchBar from "../components/SearchBar";
-import Grid from "@material-ui/core/Grid";
+
 import "../App.css";
-import Switches from "../components/switch";
+import ButtonBar from './ButtonBar';
 import Loading from '../components/Loading';
 
 class Mapi extends Component {
@@ -37,6 +36,7 @@ class Mapi extends Component {
                 <SearchBar dataSections={dataSections} />
                 <Switches dataSections={dataSections} />
               </div> */}
+              <ButtonBar/>
               <Mapa dataSections={dataSections} />
           </div>
         )} 

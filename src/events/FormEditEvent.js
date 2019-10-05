@@ -21,7 +21,7 @@ import Button from "@material-ui/core/Button";
     const speakers = this.state.speakers;
     const stages = this.state.stages;
     const values = this.state.values;
-    console.log(values)
+    
   return (
     <Paper
       style={{

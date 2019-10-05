@@ -24,7 +24,7 @@ class EditEvent extends Component {
   };
 
   onSubmit = async e => {
-    //console.log(this.state.title, this.state.description)
+   
     e.preventDefault();
     const newEvent = {
       title: this.state.title,
@@ -37,13 +37,13 @@ class EditEvent extends Component {
       "https://imap-talent.herokuapp.com/api/events",
       newEvent
     );
-    console.log(res);
+  
 
     window.location.href = '/events';
   };
 
   onSelectChange = e => {
-    console.log(e.target.value, e.target.name);
+  
     this.setState({
       [e.target.name]: e.target.value
     });

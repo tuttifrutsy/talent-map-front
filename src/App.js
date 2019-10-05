@@ -14,6 +14,7 @@ import ZoneDetail from "./stages/ZoneDetail";
 import AllEvents from "./events/AllEvents";
 import InfoEvent from "./events/InfoEvent";
 import EditEvent from "./events/EditEvent";
+import Search from './components/SearchBar';
 
 class App extends Component {
   render() {
@@ -44,6 +45,11 @@ class App extends Component {
               exact
               path="/events/edit/:id"
               component={withRouter(EditEvent)}
+            />
+            <Route
+              exact
+              path="/search"
+              component={withRouter(Search)}
             />
           </Switch>
         </div>
