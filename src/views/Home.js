@@ -14,7 +14,6 @@ const Home = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <img className="logos" src={talentLogo} alt="logo" />
       </div>
-      <p>Inicia Sesión para continuar...</p>
       <Link to="/login">
         <Btn>Login</Btn>
       </Link>

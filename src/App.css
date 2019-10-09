@@ -434,3 +434,9 @@ ul{
   color: white;
   border-color: #23ca0f;
 }
+
+
+
+.makeStyles-root-1 .MuiAppBar-colorPrimary {
+  background-color: none;
+}
